@@ -21,6 +21,9 @@ class AbDataModule(LightningDataModule):
     dataset: pd.DataFrame = field(init=False)
     alphabet: LabelEncoder = field(init=False, default=ALPHABET_AHO)
 
+    def __post_init__(self):
+        super().__init__()
+
     def setup(self, stage: str):
         match stage:
             case "fit" | "validate" | "test":
