@@ -8,3 +8,6 @@ build/
 .mypy_cache/
 .pytest_cache/
 _skbuild
+checkpoints/
+outputs/
+wandb/
