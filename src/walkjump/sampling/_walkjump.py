@@ -189,7 +189,7 @@ def walkjump(
         seed_tensor[:, :LENGTH_FV_HEAVY_AHO], ALPHABET_AHO, from_logits=True
     )
     fv_light_aho_seed_list = token_string_from_tensor(
-        seed_tensor[:, :LENGTH_FV_LIGHT_AHO], ALPHABET_AHO, from_logits=True
+        seed_tensor[:, LENGTH_FV_HEAVY_AHO:], ALPHABET_AHO, from_logits=True
     )
 
     return pd.DataFrame(
