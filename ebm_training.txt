@@ -1,0 +1,1 @@
+walkjump_train data.csv_data_path=data/pvrig.csv.gz callbacks.model_checkpoint.filename=pvrig_ebm trainer.max_epochs=100 model=noise_ebm model.model_cfg.pretrained.checkpoint_path=checkpoints/poas_last.ckpt

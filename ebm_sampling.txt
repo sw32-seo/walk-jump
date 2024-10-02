@@ -1,0 +1,1 @@
+walkjump_sample model.checkpoint_path="checkpoints/pvrig_ebm_last.ckpt" designs.seeds=data/pvrig.csv.gz model.model_type=noise_ebm
