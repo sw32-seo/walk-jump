@@ -54,7 +54,8 @@ class NoiseEnergyModel(TrainableScoreModel):
 
     def apply_noise(self, xs: torch.Tensor) -> torch.Tensor:
         # use `sample_noise` method from denoise model, but update noise level to LMS settings
-        noised = xs + self.renorm_noise_factor * self.sample_noise(xs)
+        # noised = xs + self.renorm_noise_factor * self.sample_noise(xs)
+        noised = xs + 1.0 * self.sample_noise(xs)
         noised.requires_grad = True
         return noised
 
