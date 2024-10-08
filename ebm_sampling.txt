@@ -1,1 +1,3 @@
-walkjump_sample model.checkpoint_path="checkpoints/pvrig_ebm_last.ckpt" designs.seeds=data/pvrig.csv.gz model.model_type=noise_ebm
+walkjump_sample model.checkpoint_path="checkpoints/deepcdr_ebm_epoch\=16-step\=1902-val_loss\=-65360052.0000.ckpt" \
+                designs.seeds=data/deepcdr.csv.gz \
+                model.model_type=noise_ebm

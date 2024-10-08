@@ -8,7 +8,7 @@ model:
   denoise_path: null
 
 langevin:
-  sigma: 0.5
+  sigma: 1.0
   delta: 0.5
   lipschitz: 1.0
   friction: 1.0

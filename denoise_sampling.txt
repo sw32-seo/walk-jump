@@ -1,0 +1,5 @@
+# designs.redesign_regions=[H3]
+walkjump_sample model.checkpoint_path="checkpoints/pvrig_denoise_epoch\=314-step\=1259-val_loss\=0.0143.ckpt" \
+                designs.seeds=data/pvrig.csv.gz \
+                langevin.sigma=1.0 \
+                langevin.steps=20
