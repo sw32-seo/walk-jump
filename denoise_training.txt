@@ -2,4 +2,5 @@ walkjump_train data.csv_data_path=data/poas.csv.gz \
                callbacks.model_checkpoint.filename='"poas_denoise_{epoch}-{step}-{val_loss:.4f}"' \
                trainer.max_epochs=1000 \
                model.model_cfg.hyperparameters.sigma=0.5 \
-               data.batch_size=64
+               data.batch_size=64 \
+               callbacks.model_checkpoint.save_top_k=10

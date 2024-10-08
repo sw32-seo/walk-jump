@@ -3,4 +3,5 @@ walkjump_train data.csv_data_path=data/pvrig.csv.gz \
                trainer.max_epochs=100 \
                model=noise_ebm \
                model.model_cfg.pretrained.checkpoint_path="checkpoints/deepcdr_denoise_epoch\=94-step\=10638-val_loss\=0.0007.ckpt"
-               model.sigma=1.0
+               model.sigma=1.0 \
+               callbacks.model_checkpoint.save_top_k=10
